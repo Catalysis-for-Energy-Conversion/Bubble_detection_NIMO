@@ -1,78 +1,39 @@
 # Bubble_detection_NIMO
 Bubble detection by Hough transform and exploration of bubble distribution by BLOX
 
-# Data-driven exploration of electrode and electrolyte effects on electrochemical bubble distributions
 
-Code accompanying:
-
-Kensei Tsuburaya, Keisuke Obata, Keisuke Nagato, Ryo Tamura, Koji Tsuda, Shoichi Matsuda, Kazuhiro Takanabe, "Data-driven exploration of electrode and electrolyte effects on electrochemical bubble distributions", Journal, Year.
 
 ## Overview
 
 This repository contains the code used to generate all analyses and figures reported in the manuscript.
+K. Tsuburaya et al.
+Data-driven exploration of electrode and electrolyte effects on electrochemical bubble distributions
 
-The framework integrates active learning/AI selection (via `NIMO`) with automated video image analysis (via `Bubblytics`) to optimize bubble counting and distribution fitting experiments. NIMO is a Python library which is available from this link. (https://github.com/NIMS-DA/nimo)
 
+The framework integrates active learning/AI selection (via `NIMO`) with automated video image analysis (via `Bubblytics`) to optimize bubble counting and distribution fitting experiments. NIMO is a Python library which is available from the followig link. (https://github.com/NIMS-DA/nimo)
 
-## Repository Structure
-
-```text
-├── EXPOutput                  # Input folder for video from experiment 
-  ├── 202607011024             # Timeslot for analysis. Only newest date is selected
-    └── Exp_1                  # Folder for the experiment 
-├── analysis_output_bubble.py  # Script for processing video analysis outputs
-├── NIMO_fitting.py            # Main optimization and distribution fitting routines
-├── bubblytics.py              # Core video/image processing module for bubble counting
-├── main_bubble.ipynb          # Jupyter Notebook to execute the entire pipeline
-├── input_data/                # Input folder for fitting distribution
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
-
-```
-
-## Data Availability
-
+## Data
 The datasets used in this study are available from Zenodo:
 
 DOI: 10.5281/zenodo.20785492
 
-After downloading the data, place the files in the appropriate directories described below.
 
-## Installation
+## Requirements
 
-Clone the repository:
+Python 3.11
 
-```bash
-git clone https://github.com/lab-name/project-name.git
-cd project-name
-```
+Install packages using
 
-Create the analysis environment:
-
-```bash
 conda env create -f environment.yml
-conda activate project-env
-```
 
-## Reproducing the Results
 
-Run the notebooks in the following order:
+## Usage
 
-1. notebooks/01_preprocessing.ipynb
-2. notebooks/02_analysis.ipynb
-3. notebooks/03_figures.ipynb
+Open
 
-The generated figures will be saved in:
+main_bubble.ipynb
 
-```text
-results/figures/
-```
-
-The generated tables will be saved in:
-
-```text
-results/tables/
-```
+and run all cells.
 ## Citation
 If you find this code useful for your research, please cite our paper:
 
