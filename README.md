@@ -6,8 +6,6 @@ Bubble detection by Hough transform and exploration of bubble distribution by BL
 ## Overview
 
 This repository contains the code used to generate all analyses and figures reported in the manuscript.
-K. Tsuburaya et al.
-Data-driven exploration of electrode and electrolyte effects on electrochemical bubble distributions
 
 
 The framework integrates active learning/AI selection (via `NIMO`) with automated video image analysis (via `Bubblytics`) to optimize bubble counting and distribution fitting experiments. NIMO is a Python library which is available from the followig link. (https://github.com/NIMS-DA/nimo)
