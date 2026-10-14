@@ -10,3 +10,7 @@ dependencies:
   - pandas
   - scipy
   - matplotlib
+  - pip
+  - pip:
+      - nimo
+      - opencv-python
