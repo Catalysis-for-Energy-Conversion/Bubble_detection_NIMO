@@ -67,6 +67,8 @@ chronologically, and do not put any other files or folders directly inside
 exactly. `Res/` is created automatically if it does not exist. The scripts use
 relative paths, so run the notebook from the `experiment` folder.
 
+candidates.csv in this repository is the initial list of candidate conditions (objective columns are empty). BLOX requires at least three candidates with measured objective values; measure initial conditions first (e.g., random exploration with nimo.selection(method="RE")), enter the results, and then run BLOX.
+
 ## Workflow
 
 The analysis has two parts. Part 1 collects bubble-size data with NIMO-driven
